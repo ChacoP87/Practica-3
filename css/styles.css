@@ -1,1 +1,53 @@
+/* pseudoclases propias */
+/* pseudoclase interna para paleta de colores */
+:root{
+    /* custom property */
+    --blanco: #fff;
+    /* Tono opaco  */
+    --oscuro: #212121; 
+    /* Color primario en la paleta */
+    --primario: #ffc107;
+    /* Color secundario en la paleta */
+    --secundario: #0097a7;
+    --gris:#757575;
+}
+
+/* Da una relación del tamaño de size predeterminado por navegador*/
+html{
+    /* Dar relación de tamaño a rem, cada rem vale el 62.5% del tamaño predefinido por el navegador*/
+    font-size: 62.5%; 
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo span{
+    font-size: 2rem;
+    /* transparencia */
+    color:rgba(231, 113, 182, 19%); 
+}
+
+/* transparencia: 
+rgba() hsla() 
+Otra forma de dar color es hsl
+*/
+
+.container{
+    width: 120rem;
+    margin: 0 auto; /*Esto quiere decir que arriba y abajo es 0, derecha e izquierda es auto*/
+    text-align: center;
+}
+
+.navegacion-principal{
+    /*margin: 10px;*/
+    background-color: var(--secundario);
+}
 
