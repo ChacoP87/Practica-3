@@ -233,11 +233,20 @@ main {
 }
 
 .contenedor-campos {
-    text-align: center;
+    text-align: left;
 }
 
 .campo {
     margin-bottom: 1rem;
+}
+
+.campo input {
+    height: 5rem;
+    border-radius: 1rem;
+    border: 0px;
+    width: 100%;
+    font-weight: bold;
+    padding: 1rem 1rem;
 }
 
 .campo label {
@@ -255,7 +264,11 @@ main {
 }
 
 .campo textarea {
+    font-weight: bold;
     height: 20rem;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem 1rem;
 }
 
 /* Utilidades */
