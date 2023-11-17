@@ -96,7 +96,7 @@ Otra forma de dar color es hsl
 }
 
 .hero {
-    background-image: url(/img/hero.jpeg);
+    background-image: url(./img/hero.jpeg);
     background-repeat: no-repeat;
     /* Sirve para evitar la repetición de la imagen cuando 
     es pequeña y abarca todo el espacio de la página. Se prueba haciendo zoom out en en el 
