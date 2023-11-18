@@ -57,108 +57,88 @@ body {
     color: rgba(231, 113, 182, 19%);
 }
 
-/* transparencia: 
-rgba() hsla() 
-Otra forma de dar color es hsl
-*/
-
 .container {
-    /*width: 120rem;*/
     margin: 0 auto;
-    /*Esto quiere decir que arriba y abajo es 0, derecha e izquierda es auto*/
     text-align: center;
 }
 
 .navegacion-principal {
-    /*margin: 10px;*/
     background-color: var(--secundario);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around; /*Dejar espaciado al final, inicio y entre anclas*/
     align-items: center;
 }
 
-.navegacion-principal a {
-    /*margin: 10px;*/
-    background-color: var(--secundario);
+.navegacion-principal a { 
+    background-color: var(--secundario); /*Color azul del ancla*/
     padding: 1rem;
-    text-decoration: none;
+    text-decoration: none; /*Quitar subrayado*/
     font-weight: bold;
     font-size: 2rem;
     color: var(--blanco);
 
 }
 
-.navegacion-principal a:hover {
-    /*margin: 10px;*/
+.navegacion-principal a:hover { /*Cambio de colores para resaltar el hover*/
     background-color: var(--primario);
     color: var(--oscuro);
 }
 
-.hero {
-    background-image: url(./img/hero.jpeg);
-    background-repeat: no-repeat;
-    /* Sirve para evitar la repetición de la imagen cuando 
-    es pequeña y abarca todo el espacio de la página. Se prueba haciendo zoom out en en el 
-    navegador */
+.hero { /*Imagen de fondo debajo del navbar*/
+    background-image: url(/img/hero.jpeg);
+    background-repeat: no-repeat; /*Evitar que se repita el fondo*/
     background-size: cover;
-    /* Sirve para cubrir la imagen con todo el tamaño */
     height: 450px;
-    /* Alto del elemento hero */
     position: relative;
-    /* Para manipular la posición, el padre siempre debe ser 
-    relative*/
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; /*Separacion de la seccion de servicios*/
 }
 
-.contenedor-hero {
+.contenedor-hero { /*fondo obscurecido para la imagen*/
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /*transparencia de 50% del fondo negro*/
+    width: 100%; /*toma todo el tamanio de la imagen*/
     height: 100%;
 }
 
-.ubicacion {
+.ubicacion { /*Ajuste icono y texto de la ubicacion*/
     display: flex;
     align-items: flex-end;
 }
 
 .boton {
-    /* Set background color to secondary variable */
     background-color: var(--secundario);
-
-    /* Apply padding, border-radius, margin-top */
     padding: 1rem 3rem;
     border-radius: .5rem;
     margin-top: 3rem;
 
-    /* Set font properties */
+    /* Configuracion dela fuente */
     font-weight: bold;
     font-size: 2rem;
     text-decoration: none;
     color: var(--blanco);
     text-transform: uppercase;
-    width: 90%;
 
+    width: 90%;
     border: none;
 }
 
 .boton:hover {
-    cursor: pointer;
+    cursor: pointer; /*cambiar cursor al poner el puntero sobre el boton*/
 }
 
 .contenedor-hero p,
-.contenedor-hero h2 {
+.contenedor-hero h2 { /*Estilos del texto dentro de la imagen*/
     color: var(--blanco);
     font-weight: bold;
 }
 
-.sombra {
+.sombra {   /*Sombra del main*/
     /*Sombra del elemento en el borde*/
     box-shadow: 0px 5px 15px 0px rgba(112, 112, 122, 0.48);
     /* Sombra del elemento, al borde 
@@ -175,14 +155,14 @@ Otra forma de dar color es hsl
     /* Esquinas redondeadas */
 }
 
-main {
+main { /*Color de fondo y separacion del body para resaltar el main*/
     margin: 3rem 10rem;
     padding: 3rem 5rem;
     background-color: var(--blanco);
     border-radius: 1rem;
 }
 
-.servicio {
+.servicio {  /*Acomodar el contenido de los servicios verticalmente*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,7 +179,7 @@ main {
     text-align: center;
 }
 
-.servicio .icons {
+.servicio .icons {  /* */
     height: 15rem;
     width: 15rem;
     background-color: var(--primario);
@@ -209,8 +189,7 @@ main {
     align-items: center;
 }
 
-/* Contacto */
-.formulario {
+.formulario { /* Color, tamanio y borde de la seccion de contacto */
     background-color: var(--gris);
     width: min(60rem, 100%);
     margin: 0 auto;
@@ -219,32 +198,32 @@ main {
 
 }
 
-.formulario fieldset {
+.formulario fieldset { /*Eliminar borde a el cuadro dentro del formulario*/
     border: none;
 }
 
-.formulario legend {
+.formulario legend { /*Darle formato y color al titulo dentro de la seccion de contaxto*/
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    text-transform: uppercase;
+    text-transform: uppercase; /*Poner el titulo del cuadro de la seccion de contacto en mayusculas*/
     color: var(--primario);
 }
 
 .contenedor-campos {
-    text-align: left;
+    text-align: left; 
 }
 
 .campo {
     margin-bottom: 1rem;
 }
 
-.campo input {
+.campo input {  
     height: 5rem;
     border-radius: 1rem;
     border: 0px;
-    width: 100%;
+    width: 100%; /*Ajustar el tamanio de los inputs a el 100% del tamanio del campo*/
     font-weight: bold;
     padding: 1rem 1rem;
 }
@@ -256,7 +235,7 @@ main {
     display: block;
 }
 
-.input-text {
+.input-text {   
     width: 100%;
     border: none;
     padding: 1.5rem;
@@ -284,7 +263,7 @@ main {
     justify-content: flex-end;
 }
 
-footer {
+footer { 
     text-align: center;
 }
 
